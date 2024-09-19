@@ -6,6 +6,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ALI</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media (max-width: 640px) {
+      body {
+        padding: 0;
+      }
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .container {
+        padding: 10px;
+      }
+      .bg-gradient-to-r {
+        padding: 20px;
+      }
+      .info-box {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (min-width: 641px) and (max-width: 1024px) {
+      nav {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .container {
+        padding: 20px;
+      }
+      .bg-gradient-to-r {
+        padding: 30px;
+      }
+    }
+
+    @media (min-width: 1025px) {
+      nav {
+        flex-direction: row;
+      }
+      .bg-gradient-to-r {
+        padding: 40px;
+      }
+      .info-box {
+        margin: 30px;
+      }
+    }
+  </style>
 </head>
 
 <body class="bg-gray-900 text-white font-sans">
@@ -13,7 +58,7 @@
   <nav class="bg-black text-white font-sans">
     <div class="container mx-auto p-4 flex justify-between items-center">
       <div>
-        <a href="Muhammad _ALI_CV.pdf" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition duration-300" download>Download CV</a>
+        <a href="Muhammad_ALI_CV.pdf" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition duration-300" download>Download CV</a>
       </div>
       <ul class="flex space-x-6">
         <li><a href="profile.html" class="hover:text-blue-500 transition duration-300">Personal Profile</a></li>
@@ -80,6 +125,7 @@
         </a>
       </div>
     </div>
+  </section>
 
   <section class="py-16 bg-gray-900">
     <div class="container mx-auto text-center">
